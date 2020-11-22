@@ -1,3 +1,4 @@
+//creating var
 const Engine = Matter.Engine;
 const World= Matter.World;
 const Bodies = Matter.Bodies;
@@ -11,6 +12,7 @@ function preload() {
 }
 
 function setup(){
+    //creating new objects
     var canvas = createCanvas(1200,400);
     engine = Engine.create();
     world = engine.world;
@@ -39,6 +41,7 @@ function setup(){
 }
 
 function draw(){
+    //displaying everything
     background(backgroundImg);
     Engine.update(engine);
     console.log(box2.body.position.x);
